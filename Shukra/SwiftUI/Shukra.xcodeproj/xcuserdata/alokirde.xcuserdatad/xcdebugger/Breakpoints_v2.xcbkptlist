@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B93029A3-24B2-4695-A3D6-CEDD507D65AE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE6E7231-9B3F-4C83-9DB2-02B964A11511"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShukraUnitTests/ModelDataTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "testRouterLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DE6E7231-9B3F-4C83-9DB2-02B964A11511 - 93e73ffa9b9bba0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShukraUnitTests.ModelDataTests.testRouterLoad() throws -&gt; ()"
+                  moduleName = "ShukraUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/ShukraUnitTests/ModelDataTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "361">
+               </Location>
+               <Location
+                  uuid = "DE6E7231-9B3F-4C83-9DB2-02B964A11511 - 7f7787e1f781ecca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ShukraUnitTests.ModelDataTests.testRouterLoad() throws -&gt; ()"
+                  moduleName = "ShukraUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/ShukraUnitTests/ModelDataTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "799">
+               </Location>
+               <Location
+                  uuid = "DE6E7231-9B3F-4C83-9DB2-02B964A11511 - 7f7787e1f781eceb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ShukraUnitTests.ModelDataTests.testRouterLoad() throws -&gt; ()"
+                  moduleName = "ShukraUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/ShukraUnitTests/ModelDataTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1009">
+               </Location>
+               <Location
+                  uuid = "DE6E7231-9B3F-4C83-9DB2-02B964A11511 - 7f7787e1f781ecca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ShukraUnitTests.ModelDataTests.testRouterLoad() throws -&gt; ()"
+                  moduleName = "ShukraUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/ShukraUnitTests/ModelDataTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1009">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "142D4E36-6308-403E-9BEC-32BE28E184C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShukraUnitTests/FetcherTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "testPODFetch()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "142D4E36-6308-403E-9BEC-32BE28E184C7 - 7aec32076a3386a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Shukra.AstronomyPicture&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ShukraUnitTests.FetcherTests.testPODFetch() -&gt; ()"
+                  moduleName = "ShukraUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/ShukraUnitTests/FetcherTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  uuid = "142D4E36-6308-403E-9BEC-32BE28E184C7 - 7aec32076a3386c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Shukra.AstronomyPicture&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ShukraUnitTests.FetcherTests.testPODFetch() -&gt; ()"
+                  moduleName = "ShukraUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/ShukraUnitTests/FetcherTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "392">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1E7F243-79B3-4785-A154-3EE2D44527DF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShukraUnitTests/FetcherTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "testAsyncPODFetch()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D1E7F243-79B3-4785-A154-3EE2D44527DF - 6873bb199f9a8ed0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #1 @Sendable () async throws -&gt; () in ShukraUnitTests.FetcherTests.testAsyncPODFetch() throws -&gt; ()"
+                  moduleName = "ShukraUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/ShukraUnitTests/FetcherTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "374">
+               </Location>
+               <Location
+                  uuid = "D1E7F243-79B3-4785-A154-3EE2D44527DF - 6873bb199f9a8e35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #1 @Sendable () async throws -&gt; () in ShukraUnitTests.FetcherTests.testAsyncPODFetch() throws -&gt; ()"
+                  moduleName = "ShukraUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/ShukraUnitTests/FetcherTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "374">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5485F39E-BD92-4CA0-804B-C42AF3C2FC96"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShukraUnitTests/FetcherTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "testAsyncImageFetch()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5485F39E-BD92-4CA0-804B-C42AF3C2FC96 - 6999f542c07ba9a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; () in ShukraUnitTests.FetcherTests.testAsyncImageFetch() throws -&gt; ()"
+                  moduleName = "ShukraUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/ShukraUnitTests/FetcherTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "150">
+               </Location>
+               <Location
+                  uuid = "5485F39E-BD92-4CA0-804B-C42AF3C2FC96 - ffcf48da24f0a56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #1 @Sendable () async throws -&gt; () in ShukraUnitTests.FetcherTests.testAsyncImageFetch() throws -&gt; ()"
+                  moduleName = "ShukraUnitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/ShukraUnitTests/FetcherTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "154">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

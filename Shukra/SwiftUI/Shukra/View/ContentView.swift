@@ -2,15 +2,15 @@
 //  ContentView.swift
 //  Shukra
 //
-//  Created by Alok Irde on 10/12/21.
+//  Created by Sadyojat on 10/12/21.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("Start of workflow")
     }
 }
 

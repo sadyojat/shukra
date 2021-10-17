@@ -1,14 +1,14 @@
 //
-//  AstronomyPicture.swift
+//  Apod.swift
 //  Shukra
 //
-//  Created by Alok Irde on 10/12/21.
+//  Created by Sadyojat on 10/12/21.
 //
 
 import Foundation
 import SwiftUI
 
-struct AstronomyPicture: Hashable, Codable {
+struct Apod: Hashable, Codable {
     var copyright: String
     var date: String
     var explanation: String
@@ -16,11 +16,7 @@ struct AstronomyPicture: Hashable, Codable {
     var media_type: String
     var service_version: String
     var title: String
-    var url: String {
-        didSet {
-//            downloadImage(at: url, completionHandler: nil)
-        }
-    }
+    var url: String
 }
 
 
