@@ -14,13 +14,14 @@
 		1E00B3FF27164BA800EA977D /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B3FE27164BA800EA977D /* Apod.swift */; };
 		1E00B40227167D1100EA977D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B40127167D1100EA977D /* Network.swift */; };
 		1E00B40D2718C24C00EA977D /* ShukraUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B40C2718C24C00EA977D /* ShukraUnitTests.swift */; };
-		1E00B4162718DDA800EA977D /* PictureOfToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B4152718DDA800EA977D /* PictureOfToday.swift */; };
 		1E00B4182718DDEA00EA977D /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B4172718DDEA00EA977D /* CircleImage.swift */; };
 		1E00B41B27194AB500EA977D /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B41A27194AB500EA977D /* NetworkTests.swift */; };
-		1E00B420271C08ED00EA977D /* launch.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E00B41F271C08ED00EA977D /* launch.json */; };
-		1E00B422271C09A600EA977D /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B421271C09A600EA977D /* Launch.swift */; };
-		1E00B424271C0EC400EA977D /* LaunchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B423271C0EC400EA977D /* LaunchList.swift */; };
-		1E00B426271C144C00EA977D /* LaunchElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B425271C144C00EA977D /* LaunchElement.swift */; };
+		1E00B420271C08ED00EA977D /* mainmenu.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E00B41F271C08ED00EA977D /* mainmenu.json */; };
+		1E00B422271C09A600EA977D /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B421271C09A600EA977D /* MenuModel.swift */; };
+		1E00B424271C0EC400EA977D /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B423271C0EC400EA977D /* MenuList.swift */; };
+		1E00B426271C144C00EA977D /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B425271C144C00EA977D /* MenuItem.swift */; };
+		1E00B42A271DCE6100EA977D /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B429271DCE6100EA977D /* MenuRow.swift */; };
+		1E00B42E271DFFA000EA977D /* APODDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B42D271DFFA000EA977D /* APODDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +44,14 @@
 		1E00B40127167D1100EA977D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1E00B40A2718C24C00EA977D /* ShukraUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShukraUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E00B40C2718C24C00EA977D /* ShukraUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShukraUnitTests.swift; sourceTree = "<group>"; };
-		1E00B4152718DDA800EA977D /* PictureOfToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureOfToday.swift; sourceTree = "<group>"; };
 		1E00B4172718DDEA00EA977D /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		1E00B41A27194AB500EA977D /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
-		1E00B41F271C08ED00EA977D /* launch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = launch.json; sourceTree = "<group>"; };
-		1E00B421271C09A600EA977D /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
-		1E00B423271C0EC400EA977D /* LaunchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchList.swift; sourceTree = "<group>"; };
-		1E00B425271C144C00EA977D /* LaunchElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchElement.swift; sourceTree = "<group>"; };
+		1E00B41F271C08ED00EA977D /* mainmenu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mainmenu.json; sourceTree = "<group>"; };
+		1E00B421271C09A600EA977D /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		1E00B423271C0EC400EA977D /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		1E00B425271C144C00EA977D /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		1E00B429271DCE6100EA977D /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		1E00B42D271DFFA000EA977D /* APODDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		1E00B3EE27164A5400EA977D /* Shukra */ = {
 			isa = PBXGroup;
 			children = (
+				1E00B42B271DF4D900EA977D /* Model */,
 				1E00B41E271C08B600EA977D /* Resources */,
 				1E00B3EF27164A5400EA977D /* ShukraApp.swift */,
 				1E00B41C271A093A00EA977D /* Network */,
@@ -114,10 +117,9 @@
 		1E00B3FD27164AA400EA977D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1E00B42C271DF50B00EA977D /* MainMenu */,
 				1E00B3F127164A5400EA977D /* ContentView.swift */,
-				1E00B4152718DDA800EA977D /* PictureOfToday.swift */,
 				1E00B4192718DFC900EA977D /* Helpers */,
-				1E00B423271C0EC400EA977D /* LaunchList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,8 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				1E00B3FE27164BA800EA977D /* Apod.swift */,
-				1E00B421271C09A600EA977D /* Launch.swift */,
-				1E00B425271C144C00EA977D /* LaunchElement.swift */,
+				1E00B425271C144C00EA977D /* MenuItem.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -167,9 +168,27 @@
 		1E00B41E271C08B600EA977D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1E00B41F271C08ED00EA977D /* launch.json */,
+				1E00B41F271C08ED00EA977D /* mainmenu.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1E00B42B271DF4D900EA977D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E00B421271C09A600EA977D /* MenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E00B42C271DF50B00EA977D /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1E00B423271C0EC400EA977D /* MenuList.swift */,
+				1E00B429271DCE6100EA977D /* MenuRow.swift */,
+				1E00B42D271DFFA000EA977D /* APODDetail.swift */,
+			);
+			path = MainMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E00B3F727164A5800EA977D /* Preview Assets.xcassets in Resources */,
-				1E00B420271C08ED00EA977D /* launch.json in Resources */,
+				1E00B420271C08ED00EA977D /* mainmenu.json in Resources */,
 				1E00B3F427164A5800EA977D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,15 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E00B4162718DDA800EA977D /* PictureOfToday.swift in Sources */,
 				1E00B3F227164A5400EA977D /* ContentView.swift in Sources */,
-				1E00B424271C0EC400EA977D /* LaunchList.swift in Sources */,
+				1E00B424271C0EC400EA977D /* MenuList.swift in Sources */,
 				1E00B40227167D1100EA977D /* Network.swift in Sources */,
 				1E00B3F027164A5400EA977D /* ShukraApp.swift in Sources */,
-				1E00B426271C144C00EA977D /* LaunchElement.swift in Sources */,
-				1E00B422271C09A600EA977D /* Launch.swift in Sources */,
+				1E00B426271C144C00EA977D /* MenuItem.swift in Sources */,
+				1E00B422271C09A600EA977D /* MenuModel.swift in Sources */,
+				1E00B42A271DCE6100EA977D /* MenuRow.swift in Sources */,
 				1E00B3FF27164BA800EA977D /* Apod.swift in Sources */,
 				1E00B4182718DDEA00EA977D /* CircleImage.swift in Sources */,
+				1E00B42E271DFFA000EA977D /* APODDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +457,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,7 +487,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

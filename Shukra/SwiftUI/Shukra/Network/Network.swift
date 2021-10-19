@@ -1,5 +1,5 @@
 //
-//  ModelData.swift
+//  MenuModel.swift
 //  Shukra
 //
 //  Created by Sadyojat on 10/12/21.
@@ -33,7 +33,7 @@ extension CustomError: CustomStringConvertible {
     }
 }
 
-private let apiKey = "QpaRwg94lcrw75Befex6xRahvMdwbypgZa2MtROY"
+let apiKey = "QpaRwg94lcrw75Befex6xRahvMdwbypgZa2MtROY"
 
 struct NetworkInteractor {
             
@@ -58,25 +58,7 @@ struct NetworkInteractor {
         downloadTask.resume()
     }
     
-    static func fetchPODData(_ completionHandler: @escaping(Apod?, Error?) -> Void) {
-        let urlString = "https://api.nasa.gov/planetary/Apod?api_key="+apiKey
-        load(url: urlString) { dataOrNil, errorOrNil in
-            if let error = errorOrNil {
-                return completionHandler(nil, error)
-            }
-            
-            if let data = dataOrNil {
-                do {
-                    let picture = try JSONDecoder().decode(Apod.self, from: data)
-                    completionHandler(picture, nil)
-                } catch {
-                    completionHandler(nil, CustomError.failedDecode)
-                }
-            }
-        }
-    }
-    
-    private static func load(url path: String, completionHandler: ((Data?, Error?)->Void)?) {
+    static func load(url path: String, completionHandler: ((Data?, Error?)->Void)?) {
         guard let url = URL(string: path) else {
             completionHandler?(nil, CustomError.invalidURL)
             return
@@ -104,17 +86,7 @@ struct NetworkInteractor {
 
 @available(iOS 15.0.0, *)
 extension NetworkInteractor {
-    static func fetchPODDataWithAsyncURLSession() async throws -> Apod {
-        let urlString = "https://api.nasa.gov/planetary/Apod?api_key="+apiKey
-        do {
-            let data = try await asyncLoad(url: urlString)
-            let picture = try JSONDecoder().decode(Apod.self, from: data)
-            return picture
-        } catch {
-            throw error
-        }
-    }
-        
+            
     static func fetchAsyncImage(_ imageUrl: URL) async throws -> Image {
         do {
             let (fileUrl, _) = try await URLSession.shared.download(from: imageUrl, delegate: nil)
@@ -130,21 +102,9 @@ extension NetworkInteractor {
         }
         
     }
+            
         
-    static func fetchPODDataWithContinuation() async throws -> Apod {
-        let picture: Apod = try await withCheckedThrowingContinuation({ continuation in
-            fetchPODData { pictureOrNil, errorOrNil in
-                if let error = errorOrNil {
-                    continuation.resume(throwing: error)
-                } else if let picture = pictureOrNil {
-                    continuation.resume(returning: picture)
-                }
-            }
-        })
-        return picture
-    }
-        
-    private static func asyncLoad(url path: String) async throws -> Data {
+    static func fetchAsyncLoad(url path: String) async throws -> Data {
         guard let url = URL(string: path) else {
             throw CustomError.invalidURL
         }

@@ -23,13 +23,6 @@ class NetworkTests: XCTestCase {
     }
 
     
-    
-    func testPODFetch() {
-        NetworkInteractor.fetchPODData { pictureOrNil, errorOrNil in
-            XCTAssertNotNil(pictureOrNil)
-        }
-    }
-
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
@@ -43,13 +36,6 @@ class NetworkTests: XCTestCase {
 // MARK: NEW ( iOS 15.x ) Async Await test scenarios for router code
 @available(iOS 15.0.0, *)
 extension NetworkTests {
-    func testAsyncPODFetch() throws {
-        Task {
-            let picture = try await NetworkInteractor.fetchPODDataWithAsyncURLSession()
-            XCTAssertNotNil(picture)
-        }
-    }
-    
     func testAsyncImageFetch() throws {
         Task {
             let image = try await NetworkInteractor.fetchAsyncImage(URL(string: downloadImageUrl)!)

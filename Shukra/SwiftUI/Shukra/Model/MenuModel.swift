@@ -1,5 +1,5 @@
 //
-//  Launch.swift
+//  MenuModel.swift
 //  Shukra
 //
 //  Created by Sadyojat on 10/17/21.
@@ -7,15 +7,15 @@
 
 import Foundation
 
-final class ModelData: ObservableObject {
-    @Published var launchData: [LaunchElement] = load("launch.json")
+final class MenuModel: ObservableObject {
+    @Published var launchData: [MenuItem] = load("mainmenu.json")
 }
 
-func load<T: Decodable>(_ fileName: String) -> T {
+public func load<T: Decodable>(_ fileName: String) -> T {
     var data: Data
     
     guard let file = Bundle.main.url(forResource: fileName, withExtension: nil) else {
-        fatalError("Couldnt find launch file in bundle")
+        fatalError("Couldnt find launch file \(fileName) in bundle")
     }
     
     do {
@@ -25,8 +25,8 @@ func load<T: Decodable>(_ fileName: String) -> T {
     }
     
     do {
-        let launch = try JSONDecoder().decode(T.self, from: data)
-        return launch
+        let decodedObject = try JSONDecoder().decode(T.self, from: data)
+        return decodedObject
     } catch {
         fatalError("Failed json decoding \(error.localizedDescription)")
     }

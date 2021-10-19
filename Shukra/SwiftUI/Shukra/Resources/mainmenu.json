@@ -1,58 +1,58 @@
 [
     {
-        "name": "APOD",
+        "id": "APOD",
         "description": "Astronomy Picture of the Day"
     },
     {
-        "name": "Asteroids NeoWs",
+        "id": "Asteroids NeoWs",
         "description": "Near Earth Object Web Service"
     },
     {
-        "name": "DONKI",
+        "id": "DONKI",
         "description": "Space Weather Database of Notifications, Knowledge, Information"
     },
     {
-        "name": "Earth",
+        "id": "Earth",
         "description": "Unlock significant investment in earth observation data"
     },
     {
-        "name": "EONET",
+        "id": "EONET",
         "description": "Earth Observatory Natural Event Tracker"
     },
     {
-        "name": "EPIC",
+        "id": "EPIC",
         "description": "Earth Polychromatic Imaging Camera"
     },
     {
-        "name": "Exoplanet",
+        "id": "Exoplanet",
         "description": "Programmatic access to NASA's Exoplanet Archive Database"
     },
     {
-        "name": "Genelab",
+        "id": "Genelab",
         "description": "Programmatic interface for GeneLab's public data repository website"
     },
     {
-        "name": "Insight",
+        "id": "Insight",
         "description": "Mars Weather Service"
     },
     {
-        "name": "Mars Rover Photos",
+        "id": "Mars Rover Photos",
         "description": "Images gathered by NASA's Curiosity, Opportunity & Spirit rovers on Mars"
     },
     {
-        "name": "NASA Image and Video Library",
+        "id": "NASA Image and Video Library",
         "description": "API to access the NASA image and video library site at images.nasa.gov"
     },
     {
-        "name": "Satellite Situation Center",
+        "id": "Satellite Situation Center",
         "description": "System to case geocentric spacecraft location information into a framework of (empirical) geophysical areas"
     },
     {
-        "name": "SSD/CNEOS",
+        "id": "SSD/CNEOS",
         "description": "Solar System Dynamics and Center for Near-Earth Object Studies"
     },
     {
-        "name": "TLE API",
+        "id": "TLE API",
         "description": "Two Line element data for earth orbiting objects at a given point in time"
     }
 ]
