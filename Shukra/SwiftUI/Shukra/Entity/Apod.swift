@@ -28,7 +28,7 @@ final class ApodService: ObservableObject {
     func load() async throws -> Apod {
         do {
             let data = try await NetworkInteractor.fetchAsyncLoad(url: urlString)
-            let picture = try JSONDecoder().decode(Apod.self, from: data)
+            let picture = try JSONDecoder().decode(Apod.self, from: data)            
             return picture
         } catch {
             print("ERROR \(error.localizedDescription)")

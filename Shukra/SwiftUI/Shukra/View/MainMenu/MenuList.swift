@@ -17,6 +17,8 @@ struct MenuList: View {
         menumodel.launchData.filter { $0.isFavorite ?? false || !showFavoritesOnly }
     }
     
+    @Binding var searchText: String
+    
     var body: some View {
         NavigationView {
             List {
@@ -26,12 +28,14 @@ struct MenuList: View {
                 
                 ForEach(filteredItems) { item in
                     NavigationLink {
-                        if item.id == "APOD" {
+                        switch item.id {
+                        case "APOD":
                             APODDetail()
-                        } else {
+                        case "Mars Rover Photos":
+                            MarsRover()                            
+                        default:
                             Text("\(item.id)")
                         }
-                        
                     } label: {
                         MenuRow(item: item)
                     }
@@ -39,12 +43,13 @@ struct MenuList: View {
             }
             .navigationTitle("NASA Open API's")
         }
-        
+        .searchable(text: $searchText)
     }
 }
 
 struct MenuList_Previews: PreviewProvider {
+    @State static var testString = "Test"
     static var previews: some View {
-        MenuList().environmentObject(MenuModel())
+        MenuList(searchText: $testString).environmentObject(MenuModel())
     }
 }

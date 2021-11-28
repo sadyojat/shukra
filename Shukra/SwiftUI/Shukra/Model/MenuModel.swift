@@ -9,6 +9,7 @@ import Foundation
 
 final class MenuModel: ObservableObject {
     @Published var launchData: [MenuItem] = load("mainmenu.json")
+    @Published var mainMenu: [MenuItem] = load("mainmenu.json")
 }
 
 public func load<T: Decodable>(_ fileName: String) -> T {

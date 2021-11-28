@@ -39,7 +39,7 @@ struct APODDetail: View {
                             .bold()
                         .foregroundColor(Color.accentColor)
                     }
-                    
+
                 })
                 Spacer()
                 Divider()
@@ -55,7 +55,7 @@ struct APODDetail: View {
                         if let aObject = apodObject,
                             let imageurl = aObject.hdurl,
                             let url = URL(string: imageurl) {
-                            self.apodImage = try await ApodService().loadImage(url)
+                            self.apodImage = try await ApodService().loadImage(url)                                                                                                                                                                                              
                         }
                     } catch {
                         print("Error:: async failed")

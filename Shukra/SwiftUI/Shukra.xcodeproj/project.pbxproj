@@ -22,6 +22,11 @@
 		1E00B426271C144C00EA977D /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B425271C144C00EA977D /* MenuItem.swift */; };
 		1E00B42A271DCE6100EA977D /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B429271DCE6100EA977D /* MenuRow.swift */; };
 		1E00B42E271DFFA000EA977D /* APODDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00B42D271DFFA000EA977D /* APODDetail.swift */; };
+		1E80E68A2739DB2600F76965 /* MarsRoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80E6892739DB2600F76965 /* MarsRoverViewController.swift */; };
+		1EA66CB7273DBE9300CF9D32 /* MRListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA66CB6273DBE9300CF9D32 /* MRListCell.swift */; };
+		1EABA4C4274C4C5D001CB4FC /* MRSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C3274C4C5D001CB4FC /* MRSimpleTableViewController.swift */; };
+		1EABA4C7274C7642001CB4FC /* MarsRover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C6274C7642001CB4FC /* MarsRover.swift */; };
+		1EABA4C9274C8C0A001CB4FC /* MRNetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,12 @@
 		1E00B425271C144C00EA977D /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		1E00B429271DCE6100EA977D /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 		1E00B42D271DFFA000EA977D /* APODDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDetail.swift; sourceTree = "<group>"; };
+		1E80E6892739DB2600F76965 /* MarsRoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverViewController.swift; sourceTree = "<group>"; };
+		1EA66CB6273DBE9300CF9D32 /* MRListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRListCell.swift; sourceTree = "<group>"; };
+		1EABA4C3274C4C5D001CB4FC /* MRSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRSimpleTableViewController.swift; sourceTree = "<group>"; };
+		1EABA4C6274C7642001CB4FC /* MarsRover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRover.swift; sourceTree = "<group>"; };
+		1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MRNetworkInteractor.swift; path = NetworkInteractor/MRNetworkInteractor.swift; sourceTree = "<group>"; };
+		1EABA4CA27502B53001CB4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +105,7 @@
 		1E00B3EE27164A5400EA977D /* Shukra */ = {
 			isa = PBXGroup;
 			children = (
+				1EABA4CA27502B53001CB4FC /* Info.plist */,
 				1E00B42B271DF4D900EA977D /* Model */,
 				1E00B41E271C08B600EA977D /* Resources */,
 				1E00B3EF27164A5400EA977D /* ShukraApp.swift */,
@@ -117,6 +129,8 @@
 		1E00B3FD27164AA400EA977D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1EF0FBF1271F86D700C6AC31 /* MarsRover */,
+				1EF0FBF0271F86CA00C6AC31 /* APOD */,
 				1E00B42C271DF50B00EA977D /* MainMenu */,
 				1E00B3F127164A5400EA977D /* ContentView.swift */,
 				1E00B4192718DFC900EA977D /* Helpers */,
@@ -129,6 +143,7 @@
 			children = (
 				1E00B3FE27164BA800EA977D /* Apod.swift */,
 				1E00B425271C144C00EA977D /* MenuItem.swift */,
+				1EABA4C6274C7642001CB4FC /* MarsRover.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -186,9 +201,59 @@
 			children = (
 				1E00B423271C0EC400EA977D /* MenuList.swift */,
 				1E00B429271DCE6100EA977D /* MenuRow.swift */,
-				1E00B42D271DFFA000EA977D /* APODDetail.swift */,
 			);
 			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		1E80E68B273AF88500F76965 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				1EA66CB6273DBE9300CF9D32 /* MRListCell.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		1E80E68C273AF88F00F76965 /* Supplemantary Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supplemantary Views";
+			sourceTree = "<group>";
+		};
+		1E80E690273B2F1F00F76965 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1EABA4C5274C6C56001CB4FC /* Simple Table View */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4C3274C4C5D001CB4FC /* MRSimpleTableViewController.swift */,
+				1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */,
+			);
+			path = "Simple Table View";
+			sourceTree = "<group>";
+		};
+		1EF0FBF0271F86CA00C6AC31 /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				1E00B42D271DFFA000EA977D /* APODDetail.swift */,
+			);
+			path = APOD;
+			sourceTree = "<group>";
+		};
+		1EF0FBF1271F86D700C6AC31 /* MarsRover */ = {
+			isa = PBXGroup;
+			children = (
+				1E80E6892739DB2600F76965 /* MarsRoverViewController.swift */,
+				1E80E690273B2F1F00F76965 /* Entity */,
+				1E80E68C273AF88F00F76965 /* Supplemantary Views */,
+				1E80E68B273AF88500F76965 /* Items */,
+				1EABA4C5274C6C56001CB4FC /* Simple Table View */,
+			);
+			path = MarsRover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,11 +361,16 @@
 				1E00B424271C0EC400EA977D /* MenuList.swift in Sources */,
 				1E00B40227167D1100EA977D /* Network.swift in Sources */,
 				1E00B3F027164A5400EA977D /* ShukraApp.swift in Sources */,
+				1EABA4C9274C8C0A001CB4FC /* MRNetworkInteractor.swift in Sources */,
+				1EABA4C4274C4C5D001CB4FC /* MRSimpleTableViewController.swift in Sources */,
 				1E00B426271C144C00EA977D /* MenuItem.swift in Sources */,
 				1E00B422271C09A600EA977D /* MenuModel.swift in Sources */,
 				1E00B42A271DCE6100EA977D /* MenuRow.swift in Sources */,
+				1E80E68A2739DB2600F76965 /* MarsRoverViewController.swift in Sources */,
 				1E00B3FF27164BA800EA977D /* Apod.swift in Sources */,
+				1EABA4C7274C7642001CB4FC /* MarsRover.swift in Sources */,
 				1E00B4182718DDEA00EA977D /* CircleImage.swift in Sources */,
+				1EA66CB7273DBE9300CF9D32 /* MRListCell.swift in Sources */,
 				1E00B42E271DFFA000EA977D /* APODDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +522,7 @@
 				DEVELOPMENT_TEAM = 496E7658VY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Shukra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -464,7 +535,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alokirde.Shukra;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Shukra;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,6 +553,7 @@
 				DEVELOPMENT_TEAM = 496E7658VY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Shukra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -494,7 +566,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alokirde.Shukra;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Shukra;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
