@@ -2,7 +2,7 @@
 //  MRNetworkInteractor.swift
 //  Shukra
 //
-//  Created by Alok Irde on 11/22/21.
+//  Created by Sadyojat on 11/22/21.
 //
 
 import Foundation

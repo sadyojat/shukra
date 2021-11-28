@@ -2,7 +2,7 @@
 //  MarsRoverViewController.swift
 //  Shukra
 //
-//  Created by Alok Irde on 11/8/21.
+//  Created by Sadyojat on 11/8/21.
 //
 
 import UIKit

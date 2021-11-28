@@ -2,7 +2,7 @@
 //  CellConfigProtocols.swift
 //  Shukra
 //
-//  Created by Alok Irde on 11/27/21.
+//  Created by Sadyojat on 11/27/21.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  MRListCell.swift
 //  Shukra
 //
-//  Created by Alok Irde on 11/11/21.
+//  Created by Sadyojat on 11/11/21.
 //
 
 import UIKit
