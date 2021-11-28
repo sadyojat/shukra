@@ -27,7 +27,7 @@
 		1EABA4C4274C4C5D001CB4FC /* MRSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C3274C4C5D001CB4FC /* MRSimpleTableViewController.swift */; };
 		1EABA4C7274C7642001CB4FC /* MarsRover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C6274C7642001CB4FC /* MarsRover.swift */; };
 		1EABA4C9274C8C0A001CB4FC /* MRNetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */; };
-		1EABA4CC275332F9001CB4FC /* CellConfigProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4CB275332F9001CB4FC /* CellConfigProtocols.swift */; };
+		1EABA4CC275332F9001CB4FC /* MRProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4CB275332F9001CB4FC /* MRProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 		1EABA4C6274C7642001CB4FC /* MarsRover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRover.swift; sourceTree = "<group>"; };
 		1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRNetworkInteractor.swift; sourceTree = "<group>"; };
 		1EABA4CA27502B53001CB4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		1EABA4CB275332F9001CB4FC /* CellConfigProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigProtocols.swift; sourceTree = "<group>"; };
+		1EABA4CB275332F9001CB4FC /* MRProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +238,7 @@
 		1EABA4CD27533318001CB4FC /* Protocol Declarations */ = {
 			isa = PBXGroup;
 			children = (
-				1EABA4CB275332F9001CB4FC /* CellConfigProtocols.swift */,
+				1EABA4CB275332F9001CB4FC /* MRProtocols.swift */,
 			);
 			path = "Protocol Declarations";
 			sourceTree = "<group>";
@@ -447,7 +447,7 @@
 				1E00B4182718DDEA00EA977D /* CircleImage.swift in Sources */,
 				1EA66CB7273DBE9300CF9D32 /* MRListCell.swift in Sources */,
 				1E00B42E271DFFA000EA977D /* APODDetail.swift in Sources */,
-				1EABA4CC275332F9001CB4FC /* CellConfigProtocols.swift in Sources */,
+				1EABA4CC275332F9001CB4FC /* MRProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
