@@ -73,6 +73,8 @@ class MarsRoverViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             navigationController?.pushViewController(MRSimpleTableViewController(style: .plain), animated: true)
+        case 1:
+            navigationController?.pushViewController(MRSimpleListViewController(style: .plain), animated: true)
         default:
             break
         }

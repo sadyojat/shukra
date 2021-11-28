@@ -8,6 +8,10 @@
 import Foundation
 
 
+enum MRSection {
+    case main
+}
+
 struct Rover: Codable {
     enum CodingKeys: String, CodingKey {
         case landingDate = "landing_date"
@@ -35,7 +39,8 @@ struct Camera: Codable {
     }
 }
 
-struct Photo: Codable {
+struct Photo: Codable, Hashable {
+    
     var id: Int
     var solarDay: Int
     var earthDate: String
@@ -48,6 +53,14 @@ struct Photo: Codable {
         case solarDay = "sol"
         case earthDate = "earth_date"
         case id, rover, camera
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    static func == (lhs: Photo, rhs: Photo) -> Bool {
+        return lhs.id == rhs.id
     }
 }
 

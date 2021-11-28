@@ -28,6 +28,7 @@
 		1EABA4C7274C7642001CB4FC /* MarsRover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C6274C7642001CB4FC /* MarsRover.swift */; };
 		1EABA4C9274C8C0A001CB4FC /* MRNetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */; };
 		1EABA4CC275332F9001CB4FC /* MRProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4CB275332F9001CB4FC /* MRProtocols.swift */; };
+		1EABA4DA27536374001CB4FC /* MRSimpleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4D927536374001CB4FC /* MRSimpleListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRNetworkInteractor.swift; sourceTree = "<group>"; };
 		1EABA4CA27502B53001CB4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1EABA4CB275332F9001CB4FC /* MRProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRProtocols.swift; sourceTree = "<group>"; };
+		1EABA4D927536374001CB4FC /* MRSimpleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRSimpleListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 		1EABA4CE27533328001CB4FC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1EABA4D627535DDC001CB4FC /* CL Simple Table View */,
 				1EABA4D02753336C001CB4FC /* Main */,
 				1EABA4C5274C6C56001CB4FC /* Simple Table View */,
 			);
@@ -307,6 +310,14 @@
 				1E00B429271DCE6100EA977D /* MenuRow.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		1EABA4D627535DDC001CB4FC /* CL Simple Table View */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4D927536374001CB4FC /* MRSimpleListViewController.swift */,
+			);
+			path = "CL Simple Table View";
 			sourceTree = "<group>";
 		};
 		1EF0FBF0271F86CA00C6AC31 /* APOD */ = {
@@ -437,6 +448,7 @@
 				1E00B40227167D1100EA977D /* Network.swift in Sources */,
 				1E00B3F027164A5400EA977D /* ShukraApp.swift in Sources */,
 				1EABA4C9274C8C0A001CB4FC /* MRNetworkInteractor.swift in Sources */,
+				1EABA4DA27536374001CB4FC /* MRSimpleListViewController.swift in Sources */,
 				1EABA4C4274C4C5D001CB4FC /* MRSimpleTableViewController.swift in Sources */,
 				1E00B426271C144C00EA977D /* MenuItem.swift in Sources */,
 				1E00B422271C09A600EA977D /* MenuModel.swift in Sources */,
