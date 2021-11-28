@@ -10,12 +10,9 @@ import UIKit
 class MRSimpleListViewController: UITableViewController {
 
     var dataSource: UITableViewDiffableDataSource<MRSection, Photo>! = nil
-    
     let scopeButtonTitles = ["Curiosity", "Spirit", "Opportunity"]
-    
     var cache = [String: RoverPhotos]()
     var imageCache = [String: UIImage]()
-    
     var selectedRover: String = ""
     
     override func viewDidLoad() {
@@ -23,7 +20,6 @@ class MRSimpleListViewController: UITableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "simple-list-mr-cell")
         configureHierarchy()
         configureDataSource()
-        // Do any additional setup after loading the view.
     }
 }
 
@@ -68,18 +64,21 @@ extension MRSimpleListViewController {
                         print("ERROR: failed image download")
                     }
                 }
-                
             }
             cell.accessoryType = .disclosureIndicator
             return cell
         })
         self.dataSource.defaultRowAnimation = .fade
-        reload()
+        fetchAndApplyInitialSnapshot()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
 
-extension MRSimpleListViewController /* Manage Initial & Updated snapshots */ {
+extension MRSimpleListViewController /* Manage snapshots */ {
     func applyInitialSnapshot(with photos: [Photo]) {
         var initialSnapshot = NSDiffableDataSourceSnapshot<MRSection, Photo>()
         initialSnapshot.appendSections([.main])
@@ -92,6 +91,23 @@ extension MRSimpleListViewController /* Manage Initial & Updated snapshots */ {
         updatedSnapshot.reloadItems([photo])
         self.dataSource.apply(updatedSnapshot, animatingDifferences: true)
     }
+    
+    func fetchAndApplyInitialSnapshot() {
+        let roverName = selectedRover.lowercased()
+        if let roverPhotos = cache[roverName] {
+            applyInitialSnapshot(with: roverPhotos.photos)
+        } else {
+            Task {
+                do {
+                    let roverPhotos = try await MRNetworkInteractor().fetchPhotos(roverName)
+                    cache[roverName] = roverPhotos
+                    applyInitialSnapshot(with: roverPhotos.photos)
+                } catch {
+                    print("ERROR :: roverPhotos unavailable")
+                }
+            }
+        }
+    }
 }
 
 extension MRSimpleListViewController: UISearchResultsUpdating {
@@ -101,7 +117,7 @@ extension MRSimpleListViewController: UISearchResultsUpdating {
         }
         selectedRover = scopeButtonTitles[searchController.searchBar.selectedScopeButtonIndex]
         updatePlaceholder(searchController)
-        reload()
+        fetchAndApplyInitialSnapshot()
     }
 }
 
@@ -121,26 +137,6 @@ extension MRSimpleListViewController: UISearchControllerDelegate {
             searchController.searchBar.placeholder = vanillaSearchText
         } else {
             searchController.searchBar.placeholder = "\(selectedRover) rover search..."
-        }
-    }
-}
-
-
-extension MRSimpleListViewController /* Private functions */{
-    private func reload() {
-        let roverName = selectedRover.lowercased()
-        if let roverPhotos = cache[roverName] {
-            applyInitialSnapshot(with: roverPhotos.photos)
-        } else {
-            Task {
-                do {
-                    let roverPhotos = try await MRNetworkInteractor().fetchPhotos(roverName)
-                    cache[roverName] = roverPhotos
-                    applyInitialSnapshot(with: roverPhotos.photos)
-                } catch {
-                    print("ERROR :: roverPhotos unavailable")
-                }
-            }
         }
     }
 }
