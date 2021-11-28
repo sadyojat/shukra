@@ -9,6 +9,7 @@ import UIKit
 
 let vanillaSearch: String = "Search..."
 
+
 class MRSimpleTableViewController: UITableViewController {
     let scopeButtonTitles = ["Curiosity", "Spirit", "Opportunity"]
     
@@ -76,8 +77,10 @@ class MRSimpleTableViewController: UITableViewController {
         return cell
     }
     
-    
-    
+        
+}
+
+extension MRSimpleTableViewController: SimpleCellConfiguration {
     func configureCell(_ text: String?, _ secondaryText: String?, _ image: UIImage?) -> UIListContentConfiguration {
         var config = UIListContentConfiguration.subtitleCell()
         config.imageProperties.maximumSize = CGSize(width: 44.0, height: 44.0)

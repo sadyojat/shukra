@@ -27,6 +27,7 @@
 		1EABA4C4274C4C5D001CB4FC /* MRSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C3274C4C5D001CB4FC /* MRSimpleTableViewController.swift */; };
 		1EABA4C7274C7642001CB4FC /* MarsRover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C6274C7642001CB4FC /* MarsRover.swift */; };
 		1EABA4C9274C8C0A001CB4FC /* MRNetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */; };
+		1EABA4CC275332F9001CB4FC /* CellConfigProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4CB275332F9001CB4FC /* CellConfigProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +62,9 @@
 		1EA66CB6273DBE9300CF9D32 /* MRListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRListCell.swift; sourceTree = "<group>"; };
 		1EABA4C3274C4C5D001CB4FC /* MRSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRSimpleTableViewController.swift; sourceTree = "<group>"; };
 		1EABA4C6274C7642001CB4FC /* MarsRover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRover.swift; sourceTree = "<group>"; };
-		1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MRNetworkInteractor.swift; path = NetworkInteractor/MRNetworkInteractor.swift; sourceTree = "<group>"; };
+		1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRNetworkInteractor.swift; sourceTree = "<group>"; };
 		1EABA4CA27502B53001CB4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1EABA4CB275332F9001CB4FC /* CellConfigProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				1EABA4CA27502B53001CB4FC /* Info.plist */,
-				1E00B42B271DF4D900EA977D /* Model */,
 				1E00B41E271C08B600EA977D /* Resources */,
 				1E00B3EF27164A5400EA977D /* ShukraApp.swift */,
 				1E00B41C271A093A00EA977D /* Network */,
-				1E00B40027167BBB00EA977D /* Entity */,
 				1E00B3FD27164AA400EA977D /* View */,
 				1E00B3F327164A5800EA977D /* Assets.xcassets */,
 				1E00B3F527164A5800EA977D /* Preview Content */,
@@ -141,9 +141,7 @@
 		1E00B40027167BBB00EA977D /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				1E00B3FE27164BA800EA977D /* Apod.swift */,
 				1E00B425271C144C00EA977D /* MenuItem.swift */,
-				1EABA4C6274C7642001CB4FC /* MarsRover.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -199,8 +197,9 @@
 		1E00B42C271DF50B00EA977D /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
-				1E00B423271C0EC400EA977D /* MenuList.swift */,
-				1E00B429271DCE6100EA977D /* MenuRow.swift */,
+				1E00B40027167BBB00EA977D /* Entity */,
+				1EABA4D32753348E001CB4FC /* SwiftUI Views */,
+				1E00B42B271DF4D900EA977D /* Model */,
 			);
 			path = MainMenu;
 			sourceTree = "<group>";
@@ -213,16 +212,17 @@
 			path = Items;
 			sourceTree = "<group>";
 		};
-		1E80E68C273AF88F00F76965 /* Supplemantary Views */ = {
+		1E80E68C273AF88F00F76965 /* Supplementary Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "Supplemantary Views";
+			path = "Supplementary Views";
 			sourceTree = "<group>";
 		};
 		1E80E690273B2F1F00F76965 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				1EABA4C6274C7642001CB4FC /* MarsRover.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -231,15 +231,89 @@
 			isa = PBXGroup;
 			children = (
 				1EABA4C3274C4C5D001CB4FC /* MRSimpleTableViewController.swift */,
-				1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */,
 			);
 			path = "Simple Table View";
+			sourceTree = "<group>";
+		};
+		1EABA4CD27533318001CB4FC /* Protocol Declarations */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4CB275332F9001CB4FC /* CellConfigProtocols.swift */,
+			);
+			path = "Protocol Declarations";
+			sourceTree = "<group>";
+		};
+		1EABA4CE27533328001CB4FC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4D02753336C001CB4FC /* Main */,
+				1EABA4C5274C6C56001CB4FC /* Simple Table View */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1EABA4CF27533355001CB4FC /* Network Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */,
+			);
+			path = "Network Interface";
+			sourceTree = "<group>";
+		};
+		1EABA4D02753336C001CB4FC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1E80E6892739DB2600F76965 /* MarsRoverViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1EABA4D127533428001CB4FC /* SwiftUI Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				1E00B42D271DFFA000EA977D /* APODDetail.swift */,
+			);
+			path = "SwiftUI Detail View";
+			sourceTree = "<group>";
+		};
+		1EABA4D227533442001CB4FC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1E00B3FE27164BA800EA977D /* Apod.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1EABA4D32753348E001CB4FC /* SwiftUI Views */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4D5275334A7001CB4FC /* Cells */,
+				1EABA4D42753349F001CB4FC /* Lists */,
+			);
+			path = "SwiftUI Views";
+			sourceTree = "<group>";
+		};
+		1EABA4D42753349F001CB4FC /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				1E00B423271C0EC400EA977D /* MenuList.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		1EABA4D5275334A7001CB4FC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1E00B429271DCE6100EA977D /* MenuRow.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		1EF0FBF0271F86CA00C6AC31 /* APOD */ = {
 			isa = PBXGroup;
 			children = (
-				1E00B42D271DFFA000EA977D /* APODDetail.swift */,
+				1EABA4D227533442001CB4FC /* Entity */,
+				1EABA4D127533428001CB4FC /* SwiftUI Detail View */,
 			);
 			path = APOD;
 			sourceTree = "<group>";
@@ -247,11 +321,12 @@
 		1EF0FBF1271F86D700C6AC31 /* MarsRover */ = {
 			isa = PBXGroup;
 			children = (
-				1E80E6892739DB2600F76965 /* MarsRoverViewController.swift */,
+				1EABA4CF27533355001CB4FC /* Network Interface */,
+				1EABA4CE27533328001CB4FC /* View Controllers */,
+				1EABA4CD27533318001CB4FC /* Protocol Declarations */,
 				1E80E690273B2F1F00F76965 /* Entity */,
-				1E80E68C273AF88F00F76965 /* Supplemantary Views */,
+				1E80E68C273AF88F00F76965 /* Supplementary Views */,
 				1E80E68B273AF88500F76965 /* Items */,
-				1EABA4C5274C6C56001CB4FC /* Simple Table View */,
 			);
 			path = MarsRover;
 			sourceTree = "<group>";
@@ -372,6 +447,7 @@
 				1E00B4182718DDEA00EA977D /* CircleImage.swift in Sources */,
 				1EA66CB7273DBE9300CF9D32 /* MRListCell.swift in Sources */,
 				1E00B42E271DFFA000EA977D /* APODDetail.swift in Sources */,
+				1EABA4CC275332F9001CB4FC /* CellConfigProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
