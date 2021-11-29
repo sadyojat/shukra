@@ -28,7 +28,8 @@ class MarsRoverViewController: UITableViewController {
     
     let viewOptions = [
         "Simple Table View",
-        "Composition Layout Table View",
+        "Simple CL List",
+        "Grouped CL List",
         "Collection View",
         "Composition Layout Collection View"
     ]
@@ -75,6 +76,8 @@ class MarsRoverViewController: UITableViewController {
             navigationController?.pushViewController(MRSimpleTableViewController(style: .plain), animated: true)
         case 1:
             navigationController?.pushViewController(MRSimpleListViewController(style: .plain), animated: true)
+        case 2:
+            navigationController?.pushViewController(MRGroupedListViewController(), animated: true)
         default:
             break
         }

@@ -76,8 +76,6 @@ class MRSimpleTableViewController: UITableViewController {
         }
         return cell
     }
-    
-        
 }
 
 extension MRSimpleTableViewController: SimpleCellConfiguration {

@@ -7,144 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9BBBF7C7-4C10-423C-9761-2FC958ED72B4"
+            uuid = "84A21295-B455-4331-B8B6-7423E2EDBD39"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Shukra/Entity/Apod.swift"
+            filePath = "Shukra/View/MarsRover/View Controllers/Grouped Table View/MRGroupedListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "loadImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9BBBF7C7-4C10-423C-9761-2FC958ED72B4 - d2daf8f62339a3c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Shukra.ApodService.loadImage(Foundation.URL) async throws -&gt; SwiftUI.Image"
-                  moduleName = "Shukra"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/Shukra/Entity/Apod.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "9BBBF7C7-4C10-423C-9761-2FC958ED72B4 - faddf507dc867fc2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) await resume partial function for Shukra.ApodService.loadImage(Foundation.URL) async throws -&gt; SwiftUI.Image"
-                  moduleName = "Shukra"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alokirde/Developer/alok-github/shukra/Shukra/SwiftUI/Shukra/Entity/Apod.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "68">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DF64D192-2489-4B6A-8DBC-2B8FDFCBF12A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shukra/View/APOD/APODDetail.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "724AA632-EBA0-4164-8A26-0DD23E203477"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shukra/View/MarsRover/ViewController/MarsRoverViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "configureDataSource()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D74644BA-4F1D-4EAA-9C6F-74373CD48E44"
+            uuid = "39A71188-3A71-4792-8BD7-35B7EA60C23C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Shukra/View/MarsRover/ViewController/MarsRoverViewController.swift"
+            filePath = "Shukra/View/MarsRover/View Controllers/Grouped Table View/MRGroupedListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "applyUpdatedSnapshot(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1D142C3E-0BE7-4A19-BB8D-562A6F91AFF7"
-            shouldBeEnabled = "Yes"
+            uuid = "E9F04C3A-FCD1-4F7A-84E8-09B576DAD67B"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Shukra/View/MarsRover/ViewController/MarsRoverViewController.swift"
+            filePath = "Shukra/View/MarsRover/View Controllers/Grouped Table View/Cell/GroupedListCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "createDataSource()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DDDE087A-EB7E-48BE-86DE-861927480659"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shukra/View/MarsRover/Simple Table View/MRSimpleTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "willDismissSearchController(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D2FC43DE-AAC4-4D73-99F5-4031EBEDBA06"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shukra/View/MarsRover/Simple Table View/MRSimpleTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "updatePlaceholder(_:with:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "init(frame:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

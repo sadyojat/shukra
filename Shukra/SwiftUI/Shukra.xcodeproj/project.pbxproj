@@ -29,6 +29,9 @@
 		1EABA4C9274C8C0A001CB4FC /* MRNetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4C8274C8C0A001CB4FC /* MRNetworkInteractor.swift */; };
 		1EABA4CC275332F9001CB4FC /* MRProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4CB275332F9001CB4FC /* MRProtocols.swift */; };
 		1EABA4DA27536374001CB4FC /* MRSimpleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4D927536374001CB4FC /* MRSimpleListViewController.swift */; };
+		1EABA4DE27542035001CB4FC /* MRGroupedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4DD27542035001CB4FC /* MRGroupedListViewController.swift */; };
+		1EABA4E22754350C001CB4FC /* SectionTitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4E12754350C001CB4FC /* SectionTitleSupplementaryView.swift */; };
+		1EABA4E42754362A001CB4FC /* GroupedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4E32754362A001CB4FC /* GroupedListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		1EABA4CA27502B53001CB4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1EABA4CB275332F9001CB4FC /* MRProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRProtocols.swift; sourceTree = "<group>"; };
 		1EABA4D927536374001CB4FC /* MRSimpleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRSimpleListViewController.swift; sourceTree = "<group>"; };
+		1EABA4DD27542035001CB4FC /* MRGroupedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRGroupedListViewController.swift; sourceTree = "<group>"; };
+		1EABA4E12754350C001CB4FC /* SectionTitleSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleSupplementaryView.swift; sourceTree = "<group>"; };
+		1EABA4E32754362A001CB4FC /* GroupedListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +254,7 @@
 		1EABA4CE27533328001CB4FC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1EABA4DC27540B14001CB4FC /* Grouped Table View */,
 				1EABA4D627535DDC001CB4FC /* CL Simple Table View */,
 				1EABA4D02753336C001CB4FC /* Main */,
 				1EABA4C5274C6C56001CB4FC /* Simple Table View */,
@@ -318,6 +325,32 @@
 				1EABA4D927536374001CB4FC /* MRSimpleListViewController.swift */,
 			);
 			path = "CL Simple Table View";
+			sourceTree = "<group>";
+		};
+		1EABA4DC27540B14001CB4FC /* Grouped Table View */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4E0275434CC001CB4FC /* Header */,
+				1EABA4DF275434C4001CB4FC /* Cell */,
+				1EABA4DD27542035001CB4FC /* MRGroupedListViewController.swift */,
+			);
+			path = "Grouped Table View";
+			sourceTree = "<group>";
+		};
+		1EABA4DF275434C4001CB4FC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4E32754362A001CB4FC /* GroupedListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1EABA4E0275434CC001CB4FC /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4E12754350C001CB4FC /* SectionTitleSupplementaryView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		1EF0FBF0271F86CA00C6AC31 /* APOD */ = {
@@ -449,6 +482,8 @@
 				1E00B3F027164A5400EA977D /* ShukraApp.swift in Sources */,
 				1EABA4C9274C8C0A001CB4FC /* MRNetworkInteractor.swift in Sources */,
 				1EABA4DA27536374001CB4FC /* MRSimpleListViewController.swift in Sources */,
+				1EABA4E42754362A001CB4FC /* GroupedListCell.swift in Sources */,
+				1EABA4E22754350C001CB4FC /* SectionTitleSupplementaryView.swift in Sources */,
 				1EABA4C4274C4C5D001CB4FC /* MRSimpleTableViewController.swift in Sources */,
 				1E00B426271C144C00EA977D /* MenuItem.swift in Sources */,
 				1E00B422271C09A600EA977D /* MenuModel.swift in Sources */,
@@ -459,6 +494,7 @@
 				1E00B4182718DDEA00EA977D /* CircleImage.swift in Sources */,
 				1EA66CB7273DBE9300CF9D32 /* MRListCell.swift in Sources */,
 				1E00B42E271DFFA000EA977D /* APODDetail.swift in Sources */,
+				1EABA4DE27542035001CB4FC /* MRGroupedListViewController.swift in Sources */,
 				1EABA4CC275332F9001CB4FC /* MRProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
