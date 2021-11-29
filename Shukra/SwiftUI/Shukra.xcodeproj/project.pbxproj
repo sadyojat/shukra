@@ -330,9 +330,9 @@
 		1EABA4DC27540B14001CB4FC /* Grouped Table View */ = {
 			isa = PBXGroup;
 			children = (
+				1EABA4E527546D67001CB4FC /* View Controller */,
 				1EABA4E0275434CC001CB4FC /* Header */,
 				1EABA4DF275434C4001CB4FC /* Cell */,
-				1EABA4DD27542035001CB4FC /* MRGroupedListViewController.swift */,
 			);
 			path = "Grouped Table View";
 			sourceTree = "<group>";
@@ -351,6 +351,14 @@
 				1EABA4E12754350C001CB4FC /* SectionTitleSupplementaryView.swift */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		1EABA4E527546D67001CB4FC /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4DD27542035001CB4FC /* MRGroupedListViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 		1EF0FBF0271F86CA00C6AC31 /* APOD */ = {

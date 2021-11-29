@@ -177,7 +177,6 @@ extension MRGroupedListViewController: UISearchResultsUpdating, UISearchControll
             return
         }
         selectedRover = scopeButtonTitles[searchController.searchBar.selectedScopeButtonIndex]
-//        updatePlaceholder(searchController)
         fetchAndApplyInitialSnapshot()
     }
 }
@@ -186,5 +185,12 @@ extension MRGroupedListViewController: UISearchResultsUpdating, UISearchControll
 extension MRGroupedListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        let cell = collectionView.cellForItem(at: indexPath)
+        UIView.animate(withDuration: 0.2, delay: 0.1, options: .curveEaseInOut) {
+            cell?.alpha = 0.0
+        } completion: { flag in
+            cell?.alpha = 1.0
+        }
+
     }
 }
