@@ -12,6 +12,7 @@ class SectionTitleSupplementaryView: UICollectionReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .systemBackground
         configure()
     }
     

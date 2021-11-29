@@ -32,6 +32,7 @@
 		1EABA4DE27542035001CB4FC /* MRGroupedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4DD27542035001CB4FC /* MRGroupedListViewController.swift */; };
 		1EABA4E22754350C001CB4FC /* SectionTitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4E12754350C001CB4FC /* SectionTitleSupplementaryView.swift */; };
 		1EABA4E42754362A001CB4FC /* GroupedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4E32754362A001CB4FC /* GroupedListCell.swift */; };
+		1EABA4E8275476BF001CB4FC /* MRDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EABA4E7275476BF001CB4FC /* MRDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		1EABA4DD27542035001CB4FC /* MRGroupedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRGroupedListViewController.swift; sourceTree = "<group>"; };
 		1EABA4E12754350C001CB4FC /* SectionTitleSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleSupplementaryView.swift; sourceTree = "<group>"; };
 		1EABA4E32754362A001CB4FC /* GroupedListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedListCell.swift; sourceTree = "<group>"; };
+		1EABA4E7275476BF001CB4FC /* MRDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				1EABA4DC27540B14001CB4FC /* Grouped Table View */,
+				1EABA4E62754768D001CB4FC /* Rover Picture Detail */,
 				1EABA4D627535DDC001CB4FC /* CL Simple Table View */,
 				1EABA4D02753336C001CB4FC /* Main */,
 				1EABA4C5274C6C56001CB4FC /* Simple Table View */,
@@ -359,6 +362,14 @@
 				1EABA4DD27542035001CB4FC /* MRGroupedListViewController.swift */,
 			);
 			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		1EABA4E62754768D001CB4FC /* Rover Picture Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1EABA4E7275476BF001CB4FC /* MRDetailViewController.swift */,
+			);
+			path = "Rover Picture Detail";
 			sourceTree = "<group>";
 		};
 		1EF0FBF0271F86CA00C6AC31 /* APOD */ = {
@@ -484,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EABA4E8275476BF001CB4FC /* MRDetailViewController.swift in Sources */,
 				1E00B3F227164A5400EA977D /* ContentView.swift in Sources */,
 				1E00B424271C0EC400EA977D /* MenuList.swift in Sources */,
 				1E00B40227167D1100EA977D /* Network.swift in Sources */,

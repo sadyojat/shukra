@@ -40,10 +40,14 @@ extension GroupedListCell {
         
         textLabel.translatesAutoresizingMaskIntoConstraints = false
         textLabel.font = .preferredFont(forTextStyle: .headline)
+        textLabel.numberOfLines = 3
+        textLabel.lineBreakMode = .byTruncatingTail
         contentView.addSubview(textLabel)
         
         subTextLabel.translatesAutoresizingMaskIntoConstraints = false
         subTextLabel.font = .preferredFont(forTextStyle: .caption2)
+        subTextLabel.numberOfLines = 0
+        subTextLabel.lineBreakMode = .byWordWrapping
         contentView.addSubview(subTextLabel)
         
         let rtl = effectiveUserInterfaceLayoutDirection == .rightToLeft

@@ -43,6 +43,7 @@ extension MRGroupedListViewController /* Initial Configuration */ {
         section.interGroupSpacing = 5.0
         section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10)
         
+        
         let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44.0))
         let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerFooterSize,
                                                                         elementKind: sectionHeaderElementKind,
@@ -191,6 +192,14 @@ extension MRGroupedListViewController: UICollectionViewDelegate {
         } completion: { flag in
             cell?.alpha = 1.0
         }
-
+        
+        if let sectionPhotos = currentDataSet[currentSections[indexPath.section]] {
+            let photo = sectionPhotos[indexPath.row]
+            let vc = MRDetailViewController()
+            vc.titleString = photo.rover.name
+            vc.descriptionString = photo.camera.fullName+" "+photo.earthDate
+            vc.loadImage = imageCache[photo.imageUrl]
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
